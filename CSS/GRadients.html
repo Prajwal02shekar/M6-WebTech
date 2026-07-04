@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 400px;
+            width: 400px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: brown;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        aside {
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+        }
+
+        #box1 {
+            background: linear-gradient(to top, aqua, red, yellow);
+        }
+
+        #box2 {
+            background: repeating-linear-gradient(red, yellow, purple, magenta 25%);
+        }
+
+        #box3 {
+            background: radial-gradient(red, orange, yellow, red, black);
+        }
+
+        #box4 {
+            border-radius: 50%;
+            background: repeating-radial-gradient(orange, red, white 5px);
+        }
+
+        #box5 {
+            background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+        }
+
+        #box6 {
+            background: linear-gradient(orange 33.33%, white 33.33%, white 66.66%, green 66.66%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box6 div {
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            background: repeating-conic-gradient(blue, white 5%);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <aside id="box1"></aside>
+        <aside id="box2"></aside>
+        <aside id="box3"></aside>
+        <aside id="box4"></aside>
+        <aside id="box5"></aside>
+        <aside id="box6">
+            <div></div>
+        </aside>
+
+    </section>
+</body>
+
+</html>
