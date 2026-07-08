@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #nav {
+            height: 70px;
+            width: 100%;
+            background: linear-gradient(to right, #e9e4f0, #d3cce3);
+            display: flex;
+        }
+
+        #nav aside {
+            height: 70px;
+        }
+
+        #logo {
+            flex-basis: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #logo img {
+            height: 40px;
+            width: 150px;
+            border-radius: 50px;
+        }
+
+        #menu {
+            flex-basis: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #menu a{
+            text-decoration: none;
+            color: #000000;
+            font-size: 22px;
+            font-style: italic;
+            text-transform: capitalize;
+        }
+        #menu a:hover{
+            border-bottom: 1px solid hotpink;
+        }
+
+        #icons {
+            flex-basis: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <aside id="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Nykaa_New_Logo.svg/3840px-Nykaa_New_Logo.svg.png"
+                alt="">
+        </aside>
+        <aside id="menu">
+            <a href="#">categories</a>
+            <a href="#">brands</a>
+            <a href="#">luxe</a>
+            <a href="#">Nykaa Fashion</a>
+            <a href="#">Beauty Advice</a>
+        </aside>
+        <aside id="icons">
+            <p>❤️</p>
+            <p>🛒</p>
+        </aside>
+    </nav>
+</body>
+
+</html>
