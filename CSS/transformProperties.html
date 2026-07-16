@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: skyblue;
+
+            /* translate */
+            /* transform: translateX(100px); */
+            /* transform: translatey(100px); */
+            /* transform: translate(100px ,200px); */
+
+
+            /* scale */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(0.5); */
+            /* transform: scale(2,0.5); */
+
+            /* skew */
+
+            /* transform: skewX(60deg); */
+            /* transform: skewY(120deg); */
+            /* transform: skew(45deg,25deg); */
+
+            /* rotate */
+
+            /* transform: rotateX(25deg); */
+            /* transform: rotateY(25deg); */
+
+            /* transform: rotate(-90deg); */
+
+            transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 1s;
+            transition-timing-function: linear;
+        }
+
+        .container:hover{
+            transform: translate(150px,100px) scale(2,0.5) rotate(360deg);
+            border-radius: 50%;
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Hello All
+    </div>
+</body>
+</html>
