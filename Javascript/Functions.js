@@ -143,20 +143,20 @@
 
 
 
-function deposit(amount){
-    console.log(`${amount} deposited successfully`)
-}
-function withdraw(amount){
-    console.log(`${amount} withdraw successfully`)
-}
-function transfer(amount){
-    console.log(`${amount} transfer successfully`)
-}
-function bank(amount,task){
-    task(amount)
-}
-bank(1000,deposit)
-bank(500,transfer)
+// function deposit(amount){
+//     console.log(`${amount} deposited successfully`)
+// }
+// function withdraw(amount){
+//     console.log(`${amount} withdraw successfully`)
+// }
+// function transfer(amount){
+//     console.log(`${amount} transfer successfully`)
+// }
+// function bank(amount,task){
+//     task(amount)
+// }
+// bank(1000,deposit)
+// bank(500,transfer)
 //? 9. Immediate Invoke Function Expression [IIFE]
 
 // (function greet(){
