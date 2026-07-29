@@ -1,6 +1,6 @@
 # JavaScript Notes for Freshers
 
-## 01. What is JavaScript?
+## 1. What is JavaScript?
 
 JavaScript (JS) is a **high-level scripting and programming language** used to add interactivity and functionality to web pages. It is widely used for both **frontend** and **backend** development.
 
@@ -11,7 +11,7 @@ JavaScript tells the browser *what actions to perform and how to perform them*.
 
 ---
 
-## 02. History of JavaScript
+## 2. History of JavaScript
 
 - JavaScript was invented by **Brendan Eich** in **1995**.
 - At the time, **Netscape Communications Corporation** had developed the **Netscape Navigator** web browser.
@@ -35,7 +35,7 @@ Netscape hired Brendan Eich, who developed the first version of JavaScript in **
 
 ---
 
-## 03. Characteristics of JavaScript
+## 3. Characteristics of JavaScript
 
 1. **High-Level Language** — Easy to read, write, and understand.
 2. **Interpreted / JIT Compiled** — JavaScript engines parse, compile, and execute code efficiently.
@@ -47,9 +47,9 @@ Netscape hired Brendan Eich, who developed the first version of JavaScript in **
 
 ---
 
-## 04. Adding JavaScript to a Page
+## 4. Adding JavaScript to a Page
 
-### 1. Internal JavaScript
+### 4.1 Internal JavaScript
 Code is written inside the HTML file using the `<script>` tag, usually placed inside `<head>` or before the closing `</body>` tag.
 
 ```html
@@ -58,7 +58,7 @@ Code is written inside the HTML file using the `<script>` tag, usually placed in
 </script>
 ```
 
-### 2. External JavaScript
+### 4.2 External JavaScript
 Code is written in a separate `.js` file and linked into the HTML page.
 
 ```html
@@ -67,7 +67,7 @@ Code is written in a separate `.js` file and linked into the HTML page.
 
 ---
 
-## 05. Output Methods
+## 5. Output Methods
 
 | Method | Purpose |
 |---|---|
@@ -82,13 +82,13 @@ Code is written in a separate `.js` file and linked into the HTML page.
 
 ---
 
-## 06. Tokens in JavaScript
+## 6. Tokens in JavaScript
 
 **Tokens** are the smallest meaningful units of a JavaScript program.
 
 Types of tokens: Keywords, Identifiers, Literals (Values), Operators, Statements.
 
-### 1. Keywords
+### 6.1 Keywords
 Reserved words with predefined meanings in JavaScript.
 
 ```
@@ -96,7 +96,7 @@ var   let    const   if
 else  switch return  function
 ```
 
-### 2. Identifiers
+### 6.2 Identifiers
 Names given to variables, functions, classes, etc.
 
 **Rules:**
@@ -112,7 +112,7 @@ Names given to variables, functions, classes, etc.
 | `student_name` | `let` |
 | `$total` | `student name` |
 
-### 3. Literals (Values)
+### 6.3 Literals (Values)
 Values assigned directly to variables.
 
 ```
@@ -124,7 +124,7 @@ null
 
 ---
 
-## 07. Operators in JavaScript
+## 7. Operators in JavaScript
 
 Operators are symbols used to perform operations on operands.
 
@@ -155,7 +155,7 @@ condition ? value1 : value2
 
 ---
 
-## 08. Difference Between `==` and `===`
+## 8. Difference Between `==` and `===`
 
 **`==` (Loose Equality)**
 Compares only values. Performs type conversion if necessary.
@@ -171,7 +171,7 @@ Compares both value and data type. No type conversion.
 
 ---
 
-## 09. Statements in JavaScript
+## 9. Statements in JavaScript
 
 **Conditional Statements**
 - `if`
@@ -191,7 +191,7 @@ Compares both value and data type. No type conversion.
 
 ## 10. Data Types in JavaScript
 
-### Primitive Data Types
+### 10.1 Primitive Data Types
 
 | Type | Example |
 |---|---|
@@ -203,7 +203,7 @@ Compares both value and data type. No type conversion.
 | BigInt | `100n` |
 | Symbol | `Symbol()` |
 
-### Non-Primitive (Reference) Data Types
+### 10.2 Non-Primitive (Reference) Data Types
 
 - **Object** — Stores data as key-value pairs. Denoted by curly brackets `{}`.
 - **Array** — Stores multiple values in a single variable. Denoted by square brackets `[]`.
@@ -211,7 +211,7 @@ Compares both value and data type. No type conversion.
 
 ---
 
-## 11. typeof Operator
+## 11. `typeof` Operator
 
 The `typeof` operator returns the data type of a value.
 
@@ -231,7 +231,7 @@ typeof function(){}    // "function"
 
 ## 12. Hoisting & Temporal Dead Zone
 
-### What is Hoisting?
+### 12.1 What is Hoisting?
 Hoisting is JavaScript's default behavior of moving **declarations** (not initializations) to the top of their scope before execution.
 
 Written as:
@@ -247,7 +247,7 @@ console.log(a);
 a = 10;
 ```
 
-### Temporal Dead Zone (TDZ)
+### 12.2 Temporal Dead Zone (TDZ)
 The **Temporal Dead Zone (TDZ)** is the period between entering a block scope and the declaration of a `let` or `const` variable. Accessing the variable during this period results in a **ReferenceError**.
 
 ---
@@ -276,7 +276,7 @@ function outer() {
 
 ---
 
-## 14. var vs let vs const
+## 14. `var` vs `let` vs `const`
 
 | | var | let | const |
 |---|---|---|---|
@@ -289,7 +289,7 @@ function outer() {
 
 ---
 
-## 15. undefined vs not defined
+## 15. `undefined` vs `not defined`
 
 **undefined**
 It's a primitive data type. When we try to print a variable that has been declared but not assigned a value, we get `undefined`.
@@ -319,7 +319,7 @@ function getNumber() {
 }
 ```
 
-### Types of Functions
+### 16.1 Types of Functions
 
 1. **Anonymous Function** — A function without a name.
 2. **Named Function** — A function with a name or an identifier.
@@ -345,7 +345,7 @@ function getNumber() {
 
 An object in JavaScript is a collection of key-value pairs used to store related data and functionality together.
 
-### Object Inbuilt Methods
+### 17.1 Object Inbuilt Methods
 
 | Method | Description |
 |---|---|
@@ -436,3 +436,47 @@ An array in JavaScript is used to store multiple values in a single variable. Ar
 | `Number.isFinite()` | Check finite number |
 | `Number.isNaN()` | Check for NaN |
 | `valueOf()` | Get primitive value |
+
+---
+
+## 21. OOPs Concepts in JavaScript
+
+OOPs stands for Object-Oriented Programming. It is a programming approach where we organize code using objects and classes.
+
+JavaScript supports the major OOP concepts:
+
+1. **Class**
+2. **Object**
+3. **Encapsulation**
+4. **Inheritance**
+5. **Polymorphism**
+6. **Abstraction**
+
+### 21.1 Class
+A class is a blueprint or template used to create objects.
+
+### 21.2 Object
+An object is an instance of a class.
+
+### 21.3 Encapsulation
+Encapsulation means wrapping data and methods together in a single unit and controlling access to the data.
+
+### 21.4 Inheritance
+Inheritance allows one class to acquire properties and methods from another class. We use the `extends` keyword.
+
+### 21.5 Polymorphism
+Same method name but different behaviour. Polymorphism means one name, many forms.
+
+### 21.6 Abstraction
+Abstraction means hiding unnecessary implementation details and exposing only the required functionality.
+
+### 21.7 Easy Way to Remember
+
+| Concept | Analogy |
+|---|---|
+| Class | Blueprint |
+| Object | Real entity |
+| Encapsulation | Data protection |
+| Inheritance | Reusability |
+| Polymorphism | Many forms |
+| Abstraction | Hide complexity |
