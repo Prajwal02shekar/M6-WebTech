@@ -295,7 +295,7 @@ s1.deleteStduent(5)
 s1.getStduents()
 
 
-
+//! Question 1
 // Create an EmployeeCRUD class to manage employee records.
 // Each employee should have(id,name,age,designation,salary)
 // Create the following methods:
@@ -304,7 +304,7 @@ s1.getStduents()
 // updateEmployee() → Update employee using ID
 // deleteEmployee() → Delete employee using ID
 
-
+//! Question 2
 // Create a BookCRUD class to manage library books.
 // Each book should have:(id,bookName,author,price,category)
 // Create the following methods:
