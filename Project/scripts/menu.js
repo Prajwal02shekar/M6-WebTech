@@ -108,3 +108,74 @@ let products = [
 
 console.log(products)
 
+
+function displayProducts(data){
+    let itemsList=document.getElementById('itemList')
+    console.log(itemsList)
+
+    itemsList.innerHTML="";
+
+    if(data.length===0){
+        itemsList.innerHTML=`
+        <div class="noProducts">
+            <h2>No Products Found</h2>
+        </div>
+        `
+        return;
+    }
+    data.forEach((item)=>{
+        console.log(item)
+        itemsList.innerHTML+=`
+        <div class="ItemCard">
+                <img src="${item.image}" alt="${item.name}">
+                <div class="itemDetails">
+                    <h3>${item.name}</h3>
+                    <p>${item.description}</p>
+                    <p>₹ ${item.price}</p>
+                    <div class="cartBtns">
+                        <button onclick="addToCart(${item.id})">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        `
+    })
+}
+displayProducts(products)
+
+function filterItems(category){
+    if(category==="all"){
+        displayProducts(products)
+    }else{
+        let filteredItems=products.filter((item)=>item.category===category)
+        displayProducts(filteredItems)
+    }
+}
+
+
+function searchFilter(){
+    let searchBox=document.getElementById('searchBox').value.toLowerCase()
+    console.log(searchBox)
+
+    let filterData=products.filter((item)=>{
+        return item.name.toLowerCase().includes(searchBox)
+    })
+    displayProducts(filterData)
+}
+
+function addToCart(id){
+    let cart=JSON.parse(localStorage.getItem('cart'))||[]
+
+    let item=products.find((f)=>f.id===id)
+    console.log(item)
+
+    cart.push(item)
+    localStorage.setItem('cart',JSON.stringify(cart))
+    alert(`${item.name} added to cart`)
+}
+
+let cart=JSON.parse(localStorage.getItem('cart'))||[]
+let cartCount=document.getElementById('cartCount')
+cartCount.innerText=`(${cart.length})`
+
+
+
